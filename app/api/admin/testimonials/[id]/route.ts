@@ -12,8 +12,9 @@ interface RouteContext {
 // PATCH: Yorum durumunu güncelle
 export async function PATCH(request: Request, context: RouteContext) {
   try {
+    const { id } = context.params;
     const body = await request.json();
-    const success = updateTestimonial(context.params.id, body);
+    const success = updateTestimonial(id, body);
 
     if (success) {
       return NextResponse.json({ message: "Yorum güncellendi" });
@@ -31,7 +32,8 @@ export async function PATCH(request: Request, context: RouteContext) {
 // DELETE: Yorumu sil
 export async function DELETE(request: Request, context: RouteContext) {
   try {
-    const success = deleteTestimonial(context.params.id);
+    const { id } = context.params;
+    const success = deleteTestimonial(id);
 
     if (success) {
       return NextResponse.json({ message: "Yorum silindi" });

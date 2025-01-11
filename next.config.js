@@ -9,7 +9,12 @@ const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   images: {
-    domains: ["taksikirklareli.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "taksikirklareli.com",
+      },
+    ],
   },
 };
 
