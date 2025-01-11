@@ -1,11 +1,11 @@
 /** @format */
 
 import { NextResponse } from "next/server";
-import { cookies } from "next/headers";
 
-export async function POST() {
+export async function POST(): Promise<Response> {
   // Admin cookie'sini sil
-  cookies().delete("admin_auth");
+  const response = NextResponse.json({ message: "Çıkış yapıldı" });
+  response.cookies.delete("admin_auth");
 
-  return NextResponse.json({ message: "Çıkış yapıldı" });
+  return response;
 }

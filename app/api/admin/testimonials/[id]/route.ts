@@ -3,47 +3,47 @@
 import { NextRequest, NextResponse } from "next/server";
 import { updateTestimonial, deleteTestimonial } from "@/utils/testimonials";
 
-type RouteParams = {
-  params: {
-    id: string;
-  };
-};
-
 // PATCH: Yorum durumunu güncelle
-export async function PATCH(request: NextRequest, { params }: RouteParams) {
+export async function PATCH(
+  request: Request,
+  { params }: { params: Promise<{ id: string }> }
+): Promise<Response> {
   try {
-    const { id } = params;
+    const { id } = await params;
     const body = await request.json();
     const success = updateTestimonial(id, body);
 
     if (success) {
-      return NextResponse.json({ message: "Yorum güncellendi" });
+      return Response.json({ message: "Yorum güncellendi" });
     } else {
-      return NextResponse.json(
+      return Response.json(
         { error: "Yorum güncellenirken bir hata oluştu" },
         { status: 500 }
       );
     }
   } catch (error) {
-    return NextResponse.json({ error: "Bir hata oluştu" }, { status: 500 });
+    return Response.json({ error: "Bir hata oluştu" }, { status: 500 });
   }
 }
 
 // DELETE: Yorumu sil
-export async function DELETE(request: NextRequest, { params }: RouteParams) {
+export async function DELETE(
+  request: Request,
+  { params }: { params: Promise<{ id: string }> }
+): Promise<Response> {
   try {
-    const { id } = params;
+    const { id } = await params;
     const success = deleteTestimonial(id);
 
     if (success) {
-      return NextResponse.json({ message: "Yorum silindi" });
+      return Response.json({ message: "Yorum silindi" });
     } else {
-      return NextResponse.json(
+      return Response.json(
         { error: "Yorum silinirken bir hata oluştu" },
         { status: 500 }
       );
     }
   } catch (error) {
-    return NextResponse.json({ error: "Bir hata oluştu" }, { status: 500 });
+    return Response.json({ error: "Bir hata oluştu" }, { status: 500 });
   }
 }
