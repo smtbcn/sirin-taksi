@@ -1,11 +1,11 @@
 /** @format */
 
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { updateTestimonial, deleteTestimonial } from "@/utils/testimonials";
 
 // PATCH: Yorum durumunu güncelle
 export async function PATCH(
-  request: Request,
+  request: NextRequest,
   { params }: { params: { id: string } }
 ) {
   try {
@@ -28,7 +28,7 @@ export async function PATCH(
 
 // DELETE: Yorumu sil
 export async function DELETE(
-  request: Request,
+  request: NextRequest,
   { params }: { params: { id: string } }
 ) {
   try {
