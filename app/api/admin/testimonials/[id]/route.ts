@@ -3,11 +3,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { updateTestimonial, deleteTestimonial } from "@/utils/testimonials";
 
+type RouteParams = {
+  params: {
+    id: string;
+  };
+};
+
 // PATCH: Yorum durumunu güncelle
-export async function PATCH(
-  request: NextRequest,
-  { params }: { params: { id: string } }
-) {
+export async function PATCH(request: NextRequest, { params }: RouteParams) {
   try {
     const { id } = params;
     const body = await request.json();
@@ -27,10 +30,7 @@ export async function PATCH(
 }
 
 // DELETE: Yorumu sil
-export async function DELETE(
-  request: NextRequest,
-  { params }: { params: { id: string } }
-) {
+export async function DELETE(request: NextRequest, { params }: RouteParams) {
   try {
     const { id } = params;
     const success = deleteTestimonial(id);
