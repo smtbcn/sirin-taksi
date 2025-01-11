@@ -28,10 +28,10 @@ export async function PATCH(
 // DELETE: Yorumu sil
 export async function DELETE(
   request: Request,
-  { params }: { params: { id: string } }
+  context: { params: { id: string } }
 ) {
   try {
-    const success = deleteTestimonial(params.id);
+    const success = deleteTestimonial(context.params.id);
 
     if (success) {
       return NextResponse.json({ message: "Yorum silindi" });
