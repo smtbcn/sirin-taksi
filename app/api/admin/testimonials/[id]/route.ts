@@ -3,16 +3,13 @@
 import { NextResponse } from "next/server";
 import { updateTestimonial, deleteTestimonial } from "@/utils/testimonials";
 
-interface RouteContext {
-  params: {
-    id: string;
-  };
-}
-
 // PATCH: Yorum durumunu güncelle
-export async function PATCH(request: Request, context: RouteContext) {
+export async function PATCH(
+  request: Request,
+  { params }: { params: { id: string } }
+) {
   try {
-    const { id } = context.params;
+    const { id } = params;
     const body = await request.json();
     const success = updateTestimonial(id, body);
 
@@ -30,9 +27,12 @@ export async function PATCH(request: Request, context: RouteContext) {
 }
 
 // DELETE: Yorumu sil
-export async function DELETE(request: Request, context: RouteContext) {
+export async function DELETE(
+  request: Request,
+  { params }: { params: { id: string } }
+) {
   try {
-    const { id } = context.params;
+    const { id } = params;
     const success = deleteTestimonial(id);
 
     if (success) {
