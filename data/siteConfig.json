@@ -1,0 +1,40 @@
+{
+  "adminPassword": "sirin123",
+  "companyName": "Şirin Taksi",
+  "siteTitle": "Şirin Taksi - Kırklareli'nin Güvenilir Taksi Hizmeti",
+  "companySlogan": "Güvenli ve Konforlu Yolculuk",
+  "companyDescription": "7/24 profesyonel taksi hizmeti ile yanınızdayız",
+  "contact": {
+    "phone": "0543 123 3938",
+    "email": "info@taksikirklareli.com",
+    "location": "Kırklareli, Türkiye",
+    "website": "https://taksikirklareli.com"
+  },
+  "socialMedia": {
+    "facebook": "https://wa.me/905431233939",
+    "twitter": "https://wa.me/905431233939",
+    "instagram": "https://wa.me/905431233939",
+    "whatsapp": "https://wa.me/905431233939"
+  },
+  "seo": {
+    "title": "Şirin Taksi - Kırklareli Taksi Hizmeti",
+    "description": "Kırklareli'nin güvenilir taksi hizmeti. 7/24 profesyonel sürücüler, uygun fiyatlar.",
+    "keywords": "Kırklareli taksi, Kırklareli taksi hizmeti, Kırklareli taksici, Kırklareli taksi durağı, Kırklareli acil taksi"
+  },
+  "marketing": {
+    "googleAds": {
+      "conversionId": "",
+      "conversionLabel": "",
+      "remarketingId": ""
+    },
+    "googleAnalytics": {
+      "measurementId": ""
+    },
+    "metaTags": {
+      "googleSiteVerification": "",
+      "microsoftVerification": "",
+      "yandexVerification": ""
+    },
+    "customHeadTags": []
+  }
+}

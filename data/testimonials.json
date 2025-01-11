@@ -1,0 +1,94 @@
+{
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Ahmet Yılmaz",
+      "title": "İş Adamı",
+      "comment": "Her zaman temiz ve bakımlı araçlarla hizmet veriyorlar. Sürücüleri çok profesyonel.",
+      "rating": 5,
+      "date": "2024-01-10",
+      "isApproved": true
+    },
+    {
+      "id": "2",
+      "name": "Ayşe Kaya",
+      "title": "Öğretmen",
+      "comment": "Havalimanı transferi için tercih ettim, tam zamanında geldiler ve çok güvenli bir yolculuk oldu.",
+      "rating": 5,
+      "date": "2024-01-09",
+      "isApproved": true
+    },
+    {
+      "id": "3",
+      "name": "Mehmet Demir",
+      "title": "Doktor",
+      "comment": "7/24 ulaşılabilir olmaları çok güzel. Gece geç saatte bile hemen geldiler.",
+      "rating": 5,
+      "date": "2024-01-08",
+      "isApproved": true
+    },
+    {
+      "id": "4",
+      "name": "Zeynep Arslan",
+      "title": "Avukat",
+      "comment": "Uzun mesafe yolculuklarımda tercih ediyorum. Konforlu araçları ve güler yüzlü hizmetleri için teşekkürler.",
+      "rating": 5,
+      "date": "2024-01-07",
+      "isApproved": true
+    },
+    {
+      "id": "5",
+      "name": "Ali Yıldız",
+      "title": "Mühendis",
+      "comment": "İş seyahatlerimde sürekli kullanıyorum. Her zaman dakik ve güvenilir hizmet alıyorum.",
+      "rating": 5,
+      "date": "2024-01-06",
+      "isApproved": true
+    },
+    {
+      "id": "6",
+      "name": "Fatma Çelik",
+      "title": "Ev Hanımı",
+      "comment": "Hastane randevularım için kullanıyorum. Çok yardımsever ve anlayışlı sürücüleri var.",
+      "rating": 5,
+      "date": "2024-01-05",
+      "isApproved": true
+    },
+    {
+      "id": "7",
+      "name": "Mustafa Öztürk",
+      "title": "Esnaf",
+      "comment": "Şehir dışı yolculuklarımda tercih ediyorum. Uygun fiyata kaliteli hizmet sunuyorlar.",
+      "rating": 4,
+      "date": "2024-01-04",
+      "isApproved": true
+    },
+    {
+      "id": "8",
+      "name": "Elif Aydın",
+      "title": "Öğrenci",
+      "comment": "Okula gidip gelirken kullanıyorum. Çok güvenilir ve ekonomik bir hizmet.",
+      "rating": 5,
+      "date": "2024-01-03",
+      "isApproved": true
+    },
+    {
+      "id": "9",
+      "name": "Hasan Kara",
+      "title": "Emekli",
+      "comment": "Araçları her zaman temiz ve bakımlı. Sürücüleri çok kibar ve yardımsever.",
+      "rating": 5,
+      "date": "2024-01-02",
+      "isApproved": true
+    },
+    {
+      "id": "10",
+      "name": "Sema Güneş",
+      "title": "Hemşire",
+      "comment": "Nöbet çıkışlarında tercih ediyorum. 7/24 ulaşılabilir olmaları çok iyi.",
+      "rating": 5,
+      "date": "2024-01-01",
+      "isApproved": true
+    }
+  ]
+}
